@@ -27,30 +27,5 @@ stringMapCounter makeWordPairDictionary(string text){
     return string_dict;
 }
 
-bool[char] find_all_delims(string text){
-    bool[char] delims;
-    //loop all chars
-    foreach (c; text)
-    {
-        if(!isnum(c) && !isalpha(c))
-            delims[c] = true;
-    }
-    return delims;
-}
-
-bool isnum(char c){
-    if(c >= '0' && c<='9')
-        return true;
-    return false; 
-}
-
-bool isalpha(char c){
-    if(c>='a' && c<='z'){
-        return true;
-    }
-    if(c>='A' && c<='Z'){
-        return true;
-    }
-    return false;
-}
+void 
 
